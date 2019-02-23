@@ -5,7 +5,7 @@
      <group>
       <cell title="title" value="value"></cell>
     </group> 
-    <divider>我是有底线的</divider>
+    <divider class="divider">我是有底线的</divider>
  
   </div>
 </template>
@@ -31,6 +31,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.divider{
+  width: 750px;
+}
 h1, h2 {
   font-weight: normal;
 }
