@@ -37,3 +37,6 @@ npm install less less-loader --save-dev
 
 npm install yaml-loader --save-dev
 
+配置project-folder:
+方便自定义创建打包文件夹，无需修改约定好的服务器目录，修改config/config-folder/中projectFolder即可。
+
