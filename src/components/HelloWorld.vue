@@ -1,19 +1,21 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    
-     <group>
+    <h1>{{ msg }}</h1> 
+     <!-- <group>
       <cell title="title" value="value"></cell>
-    </group> 
-    <divider class="divider">我是有底线的</divider>
- 
+    </group>  -->
+    <!-- <divider class="divider">我是有底线的</divider> -->
+    
+    <!-- <button @click="goVideo">goVideo</button> -->
+    <router-link  to="/Video" >1.1  video</router-link>
+        <canvas class="video"></canvas>
   </div>
 </template>
 
 <script>
-// import {  Group,Cell } from 'vux' 
-
-
+import JSMpeg from 'jsmpeg-player';
+import $ from 'jquery'
+// import {  Group,Cell } from 'vux'  
 export default {
   name: 'HelloWorld',
   data () {
@@ -25,12 +27,36 @@ export default {
    components: {
     // Group,
     // Cell  
-  }
+  },
+   beforeCreate() {
+        console.log("---"); //undefined, undefined
+    },
+    created() {  
+    },
+    mounted(){ 
+        var url = require("@/media/test.ts");
+
+          var player = new JSMpeg.Player(url, {
+                canvas: $(".video")[0],
+                decodeFirstFrame: true,  
+                onPlay: function() {
+                  //$this.player.currentTime = 10;
+                }      
+              });
+    } 
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+.video{
+  position: absolute;
+  width:750px;
+  height:312px;
+  top:220px;
+  left:0px;
+}
 .divider{
   width: 750px;
 }

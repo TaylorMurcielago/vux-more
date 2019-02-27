@@ -40,3 +40,13 @@ npm install yaml-loader --save-dev
 配置project-folder:
 方便自定义创建打包文件夹，无需修改约定好的服务器目录，修改config/config-folder/中projectFolder即可。
 
+
+#20190227
+
+
+import JSMpeg from 'jsmpeg-player'
+video.vue添加JSMPEG：
+解决中：
+
+适应安卓，ios，video视频分批处理成图片，可在手机端自由缩放尺寸大小
+功能：开始暂停。。。

@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+
 import { Divider, Group, Cell } from 'vux'
 Vue.component('divider', Divider)
 Vue.component('group', Group)

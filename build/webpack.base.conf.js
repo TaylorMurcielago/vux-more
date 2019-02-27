@@ -5,6 +5,7 @@ const config = require('../config')
 
 const vueLoaderConfig = require('./vue-loader.conf')
 const vuxLoader = require('vux-loader')
+const webpack = require('webpack')
 
 function resolve(dir) {
     return path.join(__dirname, '..', dir)
@@ -28,6 +29,7 @@ const webpackConfig = {
             '@': resolve('src'),
         }
     },
+
     module: {
         rules: [{
                 test: /\.vue$/,
@@ -48,7 +50,7 @@ const webpackConfig = {
                 }
             },
             {
-                test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
+                test: /\.(mp4|webm|ogg|mp3|wav|flac|aac|ts)(\?.*)?$/,
                 loader: 'url-loader',
                 options: {
                     limit: 10000,
@@ -76,7 +78,14 @@ const webpackConfig = {
         net: 'empty',
         tls: 'empty',
         child_process: 'empty'
-    }
+    },
+    // 增加一个plugins
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery"
+        })
+    ],
 }
 module.exports = vuxLoader.merge(webpackConfig, {
     plugins: ['vux-ui', 'duplicate-style']
