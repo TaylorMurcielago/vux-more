@@ -50,3 +50,19 @@ video.vue添加JSMPEG：
 
 适应安卓，ios，video视频分批处理成图片，可在手机端自由缩放尺寸大小
 功能：开始暂停。。。
+补充相关资料链接可做参考：
+// Full screen video
+
+// Video / Canvas capture ?
+
+// https://github.com/phoboslab/jsmpeg
+// https://github.com/cycdpo/jsmpeg-player
+
+// iOS no audio
+// https://github.com/phoboslab/jsmpeg/issues/151
+
+
+// https://k8w.io/post/51 
+
+// chunk TS
+// https://github.com/phoboslab/jsmpeg/pull/205/files
