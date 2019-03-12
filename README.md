@@ -66,3 +66,78 @@ video.vue添加JSMPEG：
 
 // chunk TS
 // https://github.com/phoboslab/jsmpeg/pull/205/files
+
+//px to viewport
+日期：20190220
+添加尺寸适配     vw单位
+
+日期：20190228
+设计尺寸: 
+       
+        ===============================
+        iPhone 6, 7, 8 微信
+        -------------------------------
+        Layout 设计 尺寸: 750x1206
+        开发 尺寸: 375x603
+        开发 尺寸 在ios微信 带白色地步bar(不包括使用href.replace()): 375x555
+
+        Browser 尺寸: 375x603
+        Browser 尺寸 在ios微信 带白色地步bar(不包括使用href.replace()): 375x555
+        设备 尺寸: 750x1206
+        设备 尺寸 在ios微信 带白色地步bar(不包括使用href.replace()): 750x1110
+        设备 全屏 尺寸: 750x1334
+
+
+        iPhone 6 plus, 7 plus, 8 plus 微信
+        -------------------------------
+        Layout 设计 尺寸: 750x1220
+        开发 尺寸: 375x610
+        开发 尺寸 在ios微信 带白色地步bar(不包括使用href.replace()): 375x600
+
+        Browser 尺寸: 414x673
+        Browser 尺寸 在ios微信 带白色地步bar(不包括使用href.replace()): 414x662
+        设备 尺寸: 1080x1756
+        设备 尺寸 在ios微信 带白色地步bar(不包括使用href.replace()): 1080x1727
+        设备 全屏 尺寸: 1080x1920
+
+
+        iPhone X, Xs 微信
+        -------------------------------
+        Layout 设计 尺寸: 750x1450
+        开发 尺寸: 375x725
+        开发 尺寸 在ios微信 带白色地步bar(不包括使用href.replace()): 375x642
+
+        Browser 尺寸: 375x725
+        Browser 尺寸 在ios微信 带白色地步bar(不包括使用href.replace()): 375x642
+        设备 尺寸: 1125x2175
+        设备 尺寸 在ios微信 带白色地步bar(不包括使用href.replace()): 1125x1926
+        设备 全屏 尺寸: 1125x2436
+
+
+        iPhone XR 微信
+        -------------------------------
+        Layout 设计 尺寸: 750x1466
+        开发 尺寸: 375x733
+        开发 尺寸 在ios微信 带白色地步bar(不包括使用href.replace()): 375x800
+
+        Browser 尺寸: 414x809
+        Browser 尺寸 在ios微信 带白色地步bar(不包括使用href.replace()): 414x725
+        设备 尺寸: 828x1618
+        设备 尺寸 在ios微信 带白色地步bar(不包括使用href.replace()): 828x1450
+        设备 全屏 尺寸: 828x1792
+
+
+        iPhone Xs Max 微信
+        -------------------------------
+        Layout 设计 尺寸: 750x1466
+        开发 尺寸: 375x733
+        开发 尺寸 在ios微信 带白色地步bar(不包括使用href.replace()): 375x800
+
+        Browser 尺寸: 414x809
+        Browser 尺寸 在ios微信 带白色地步bar(不包括使用href.replace()): 414x725
+        设备 尺寸: 1242x2427
+        设备 尺寸 在ios微信 带白色地步bar(不包括使用href.replace()): 1242x2175
+        设备 全屏 尺寸: 1242x2688 
+
+日期：20190312
+修改jsmpeg-player可能导致的bug。

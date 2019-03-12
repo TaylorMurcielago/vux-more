@@ -3,6 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import axios from 'axios'
+import abc from '../config/test'
 
 
 import { Divider, Group, Cell } from 'vux'
@@ -10,6 +12,7 @@ Vue.component('divider', Divider)
 Vue.component('group', Group)
 Vue.component('cell', Cell)
 Vue.config.productionTip = false
+Vue.prototype.$http = axios
     //移动端延迟配置
 const FastClick = require('fastclick')
 FastClick.attach(document.body)

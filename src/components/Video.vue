@@ -1,44 +1,67 @@
 <template>
-  <div class="video">
-    <h1>aa</h1>  
+  <div class="hello">
+    <!-- <h1>{{ msg }}</h1>-->
+    <h2 class="pause"  @click="pause">Pause</h2> 
+    <h2 class="play"  @click="play">play</h2> 
+     <canvas class="video"></canvas>
   </div>
 </template>
 
 <script>
-// import {  Group,Cell } from 'vux'  
-// const JSMpeg = require('jsmpeg-player');
- import JSMpeg from 'jsmpeg-player';
-  
-export default {
-  name: 'Video',
-  data () {
-    return {
-      msg: 'Video' ,
-      player: null,
-      
-    }
+import JSMpeg from "jsmpeg-player";
+export default { 
+  data() {
+    return { 
+      player:null
+    };
   },
-   components: {
-    // Group,
-    // Cell  
-  },  
-   beforeCreate() {
-        console.log("---"); //undefined, undefined
+  created() { 
+  },
+  mounted() { 
+     var url = require("@/media/test.ts");
+ 
+    this.player = new JSMpeg.Player(url, {
+      canvas: $(".video")[0],
+      decodeFirstFrame: true,
+      autoplay:true,
+      onPlay: function() {
+        //$this.player.currentTime = 10;
+      }
+    });
+  },
+  methods: {
+    pause: function() { 
+      console.log(this);
+      this.player.pause();
     },
-    created() {
-        console.log("0000"); // hello Vue, ...
-    },
-  mounted:function() {
-    console.log("====")
-      //  var url = require("@/media/blade-runner-2049-360p.ts");
-      //     var player = new JSMpeg.Player(url, {
-      //           canvas: $('.video')[0],
-      //           decodeFirstFrame: true,  
-      //           onPlay: function() {
-      //             //$this.player.currentTime = 10;
-      //           }      
-      //         });
-   },  
+      play: function() { 
+      console.log(this);
+      this.player.play();
+    }
+  }
+};
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+.play {
+  position: absolute;
+  width: 94px;
+  top: 30px;
+  left: 20%;
 }
- 
- 
+.pause {
+  position: absolute;
+  width: 94px;
+  top: 30px;
+  right: 20%;
+}
+
+.video {
+  position: absolute;
+  width: 750px;
+  height: 312px;
+  top: 120px;
+  left: 0px;
+}
+</style>

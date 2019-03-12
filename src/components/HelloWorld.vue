@@ -1,19 +1,19 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1> 
-     <!-- <group>
+     <group>
       <cell title="title" value="value"></cell>
-    </group>  -->
+    </group> 
     <!-- <divider class="divider">我是有底线的</divider> -->
     
     <!-- <button @click="goVideo">goVideo</button> -->
-    <router-link  to="/Video" >1.1  video</router-link>
-        <canvas class="video"></canvas>
+    
   </div>
 </template>
 
 <script>
 import JSMpeg from 'jsmpeg-player';
+import $http from 'axios'
 import $ from 'jquery'
 // import {  Group,Cell } from 'vux'  
 export default {
@@ -32,18 +32,7 @@ export default {
         console.log("---"); //undefined, undefined
     },
     created() {  
-    },
-    mounted(){ 
-        var url = require("@/media/test.ts");
-
-          var player = new JSMpeg.Player(url, {
-                canvas: $(".video")[0],
-                decodeFirstFrame: true,  
-                onPlay: function() {
-                  //$this.player.currentTime = 10;
-                }      
-              });
-    } 
+    }
 }
 </script>
 
