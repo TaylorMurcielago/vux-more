@@ -141,3 +141,9 @@ video.vue添加JSMPEG：
 
 日期：20190312
 修改jsmpeg-player可能导致的bug。
+
+日期：20190313
+
+添加videoToTs文件，使用ffmpeg做视频转换ts。
+
+已知bug，转换ts经过ffmpeg-player，有些视频会出现噪点，待解决。
