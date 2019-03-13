@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <!-- <h1>{{ msg }}</h1>-->
+     
     <h2 class="pause"  @click="pause">Pause</h2> 
     <h2 class="play"  @click="play">play</h2> 
      <canvas class="video"></canvas>
