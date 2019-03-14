@@ -150,4 +150,7 @@ video.vue添加JSMPEG：
 
 
 日期:20190314
-添加axios模块，处理跨域问题，添加拦截器
+添加axios模块，处理跨域问题，添加拦截器，
+
+###########
+添加gsap  js timelinemax 动画模块，执行js动画操作
