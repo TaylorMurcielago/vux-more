@@ -4,10 +4,10 @@
      <group>
       <cell title="title" value="value"></cell>
     </group> 
-    <!-- <divider class="divider">我是有底线的</divider> -->
     
-    <!-- <button @click="goVideo">goVideo</button> -->
     
+    <returnBtn></returnBtn>
+
   </div>
 </template>
 
