@@ -17,7 +17,7 @@
      <flexbox class="vux-flexbox vux-flex-row">
 
         <flexbox-item class="vux-flexbox-item" style="margin-left: 8px;">
-             <div class="flex-demo">  <x-button @click.native="goTimeLineMax" class="weui-btn weui-btn_plain-default"  >goTo TimelineMax</x-button> 
+             <div class="flex-demo">  <x-button @click.native="goTimeLine" class="weui-btn weui-btn_plain-default"  >goTo TimelineMax</x-button> 
              </div>
         </flexbox-item>
          <flexbox-item class="vux-flexbox-item" style="margin-left: 8px;">
@@ -73,7 +73,13 @@
                 this.$router.push({
                     path: '/Axios'
                 })
+            },
+            goTimeLine:function(){
+                this.$router.push({
+                    path: '/TimeLine'
+                })
             }
+
         }
     };
 </script>

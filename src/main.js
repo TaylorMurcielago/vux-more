@@ -5,7 +5,7 @@ import App from './App'
 import router from './router'
 import axios from 'axios'
 import { Flexbox, FlexboxItem } from 'vux'
-
+import { TweenMax, TimelineMax, CSSPlugin } from "gsap/TweenMax";
 
 import { XButton } from 'vux'
 import { Divider, Group, Cell } from 'vux'

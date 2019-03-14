@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Video from '@/components/Video'
 import Axios from '@/components/Axios'
+import TimeLine from '@/components/TimeLine'
 import Home from '@/pages/Home'
 
 
@@ -23,6 +24,11 @@ export default new Router({
             path: '/Axios',
             name: 'Axios',
             component: Axios
+        },
+        {
+            path: '/TimeLine',
+            name: 'TimeLine',
+            component: TimeLine
         },
         {
             path: '/',
