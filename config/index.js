@@ -57,7 +57,7 @@ module.exports = {
         // Paths
         assetsRoot: path.resolve(__dirname, configFolder.buildFolder + configFolder.projectFolder),
         assetsSubDirectory: '',
-        assetsPublicPath: '/',
+        assetsPublicPath: './',
 
         /**
          * Source Maps
