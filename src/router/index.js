@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Video from '@/components/Video'
-import Axios from '@/pages/Axios'
+import Axios from '@/components/Axios'
 import Home from '@/pages/Home'
 
 

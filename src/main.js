@@ -16,8 +16,11 @@ Vue.component('x-button', XButton)
 Vue.component('flexbox', Flexbox)
 Vue.component('flexbox-item', FlexboxItem)
 Vue.config.productionTip = false
-Vue.prototype.$http = axios
-    //移动端延迟配置
+    // Vue.prototype.$axios = axios
+Vue.prototype.$host = '/api'
+import packedAxios from "./http";
+Vue.use(packedAxios); //使用this.$http代替封装好的axios
+//移动端延迟配置
 const FastClick = require('fastclick')
 FastClick.attach(document.body)
 
