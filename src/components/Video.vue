@@ -25,6 +25,9 @@ export default {
       canvas: $(".video")[0],
       decodeFirstFrame: true,
       autoplay:true,
+      throttled:true,
+      progressive:true,
+      chunkSize:'1024*1024',
       onPlay: function() {
         //$this.player.currentTime = 10;
       }
