@@ -40,7 +40,7 @@ module.exports = {
 
         proxyTable: {
             "/api": {
-                target: "https://www.lcpww.cn",
+                target: configFolder.domainUrl,
                 changeOrigin: true,
                 pathRewrite: {
                     '^/api': ''
