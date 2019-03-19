@@ -166,3 +166,6 @@ video.vue添加JSMPEG：
 ##########
 
 添加gsap  js timelinemax 动画模块，执行js动画操作
+
+#########
+add childTabs navgation content
