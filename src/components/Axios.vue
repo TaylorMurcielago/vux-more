@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-     <returnBtn></returnBtn>
+     <returnBtn navContent="Axios"></returnBtn>
       
     {{returnCode}}
   </div>

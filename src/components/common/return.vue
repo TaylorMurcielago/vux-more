@@ -1,11 +1,13 @@
 <template>
     <div>
         <!-- <h1>header in here</h1> -->
-        <x-header class="xHeader"></x-header>
+        <x-header class="xHeader">{{navContent}}</x-header>
     </div>
 </template>
 <script>
-    export default{}
+    export default{
+        props:['navContent']
+    }
 </script>
 <style scoped>
 .xHeader{

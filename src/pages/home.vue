@@ -2,7 +2,7 @@
   <div class="hello"> 
   
    <div>DEMO</div>
-
+ 
     <flexbox class="vux-flexbox vux-flex-row">
 
         <flexbox-item class="vux-flexbox-item" style="margin-left: 8px;">
@@ -57,6 +57,7 @@
 
             };
         },
+         
         created() {},
         mounted() {
 

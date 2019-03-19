@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
-      <returnBtn></returnBtn>
+      <!-- <returnBtn></returnBtn> -->
+         <returnBtn navContent="Video"></returnBtn>
       <!-- <x-header :left-options="{backText: ''}" title="首页" style="background:linear-gradient(to right, #447bba  , #7a88bd,  #928dba);"></x-header> -->
     <h2 class="pause"  @click="pause">Pause</h2> 
     <h2 class="play"  @click="play">play</h2> 
