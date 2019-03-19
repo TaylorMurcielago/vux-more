@@ -47,6 +47,17 @@
              </div>
          </flexbox-item> 
     </flexbox>
+     <flexbox class="vux-flexbox vux-flex-row">
+
+        <flexbox-item class="weui-btn vux-x-button-no-border weui-btn_default" style="margin-left: 8px;">
+             <div class="flex-demo">  <x-button @click.native="goBackgroundMusic" class="weui-btn vux-x-button-no-border weui-btn_default"  style="background: linear-gradient(90deg, rgb(29, 98, 240), rgb(25, 213, 253)); color: rgb(255, 255, 255);">goTo VR360</x-button> 
+             </div>
+        </flexbox-item>
+         <flexbox-item class="weui-btn vux-x-button-no-border weui-btn_default" style="margin-left: 8px;">
+             <div class="flex-demo"> <x-button @click.native="goDragPic" class="weui-btn vux-x-button-no-border weui-btn_default"  style="background: linear-gradient(90deg, rgb(29, 98, 240), rgb(25, 213, 253)); color: rgb(255, 255, 255);">goTo Html2Canvas</x-button>
+             </div>
+         </flexbox-item> 
+    </flexbox>
   </div>
 </template>
  
