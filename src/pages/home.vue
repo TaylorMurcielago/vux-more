@@ -1,49 +1,49 @@
 <template>
   <div class="hello"> 
   
-   <div>DEMO</div>
+   <div>{{testNull}}</div>
  
     <flexbox class="vux-flexbox vux-flex-row">
 
-        <flexbox-item class="vux-flexbox-item" style="margin-left: 8px;">
-             <div class="flex-demo">  <x-button @click.native="goVideo" class="weui-btn weui-btn_plain-default"  >goTo Video</x-button> 
+        <flexbox-item class="weui-btn vux-x-button-no-border weui-btn_default" style="margin-left: 8px;">
+             <div class="flex-demo">  <x-button @click.native="goVideo" class="weui-btn vux-x-button-no-border weui-btn_default" style="background: linear-gradient(90deg, rgb(29, 98, 240), rgb(25, 213, 253)); color: rgb(255, 255, 255);" >goTo Video</x-button> 
              </div>
         </flexbox-item>
-         <flexbox-item class="vux-flexbox-item" style="margin-left: 8px;">
-             <div class="flex-demo"> <x-button @click.native="goAxios" class="weui-btn weui-btn_plain-default"  >goTo Axios</x-button>
+         <flexbox-item class="weui-btn vux-x-button-no-border weui-btn_default" style="margin-left: 8px;">
+             <div class="flex-demo"> <x-button @click.native="goAxios" class="weui-btn vux-x-button-no-border weui-btn_default"  style="background: linear-gradient(90deg, rgb(29, 98, 240), rgb(25, 213, 253)); color: rgb(255, 255, 255);">goTo Axios</x-button>
              </div>
          </flexbox-item> 
     </flexbox>
      <flexbox class="vux-flexbox vux-flex-row">
 
-        <flexbox-item class="vux-flexbox-item" style="margin-left: 8px;">
-             <div class="flex-demo">  <x-button @click.native="goTimeLine" class="weui-btn weui-btn_plain-default"  >goTo TimelineMax</x-button> 
+        <flexbox-item class="weui-btn vux-x-button-no-border weui-btn_default" style="margin-left: 8px;">
+             <div class="flex-demo">  <x-button @click.native="goTimeLine" class="weui-btn vux-x-button-no-border weui-btn_default"  style="background: linear-gradient(90deg, rgb(29, 98, 240), rgb(25, 213, 253)); color: rgb(255, 255, 255);">goTo TimelineMax</x-button> 
              </div>
         </flexbox-item>
-         <flexbox-item class="vux-flexbox-item" style="margin-left: 8px;">
-             <div class="flex-demo"> <x-button @click.native="goForm" class="weui-btn weui-btn_plain-default"  >goTo Form</x-button>
+         <flexbox-item class="weui-btn vux-x-button-no-border weui-btn_default" style="margin-left: 8px;">
+             <div class="flex-demo"> <x-button @click.native="goForm" class="weui-btn vux-x-button-no-border weui-btn_default"  style="background: linear-gradient(90deg, rgb(29, 98, 240), rgb(25, 213, 253)); color: rgb(255, 255, 255);">goTo Form</x-button>
              </div>
          </flexbox-item> 
     </flexbox>
      <flexbox class="vux-flexbox vux-flex-row">
 
-        <flexbox-item class="vux-flexbox-item" style="margin-left: 8px;">
-             <div class="flex-demo">  <x-button @click.native="goWechatLogin" class="weui-btn weui-btn_plain-default"  >goTo WechatLogin</x-button> 
+        <flexbox-item class="weui-btn vux-x-button-no-border weui-btn_default" style="margin-left: 8px;">
+             <div class="flex-demo">  <x-button @click.native="goWechatLogin" class="weui-btn vux-x-button-no-border weui-btn_default"  style="background: linear-gradient(90deg, rgb(29, 98, 240), rgb(25, 213, 253)); color: rgb(255, 255, 255);">goTo WechatLogin</x-button> 
              </div>
         </flexbox-item>
-         <flexbox-item class="vux-flexbox-item" style="margin-left: 8px;">
-             <div class="flex-demo"> <x-button @click.native="goWechatShare" class="weui-btn weui-btn_plain-default"  >goTo WechatShare</x-button>
+         <flexbox-item class="weui-btn vux-x-button-no-border weui-btn_default" style="margin-left: 8px;">
+             <div class="flex-demo"> <x-button @click.native="goWechatShare" class="weui-btn vux-x-button-no-border weui-btn_default" style="background: linear-gradient(90deg, rgb(29, 98, 240), rgb(25, 213, 253)); color: rgb(255, 255, 255);" >goTo WechatShare</x-button>
              </div>
          </flexbox-item> 
     </flexbox>
      <flexbox class="vux-flexbox vux-flex-row">
 
-        <flexbox-item class="vux-flexbox-item" style="margin-left: 8px;">
-             <div class="flex-demo">  <x-button @click.native="goBackgroundMusic" class="weui-btn weui-btn_plain-default"  >goTo BackgroundMusic</x-button> 
+        <flexbox-item class="weui-btn vux-x-button-no-border weui-btn_default" style="margin-left: 8px;">
+             <div class="flex-demo">  <x-button @click.native="goBackgroundMusic" class="weui-btn vux-x-button-no-border weui-btn_default"  style="background: linear-gradient(90deg, rgb(29, 98, 240), rgb(25, 213, 253)); color: rgb(255, 255, 255);">goTo BackgroundMusic</x-button> 
              </div>
         </flexbox-item>
-         <flexbox-item class="vux-flexbox-item" style="margin-left: 8px;">
-             <div class="flex-demo"> <x-button @click.native="goDragPic" class="weui-btn weui-btn_plain-default"  >goTo DragPic</x-button>
+         <flexbox-item class="weui-btn vux-x-button-no-border weui-btn_default" style="margin-left: 8px;">
+             <div class="flex-demo"> <x-button @click.native="goDragPic" class="weui-btn vux-x-button-no-border weui-btn_default"  style="background: linear-gradient(90deg, rgb(29, 98, 240), rgb(25, 213, 253)); color: rgb(255, 255, 255);">goTo DragPic</x-button>
              </div>
          </flexbox-item> 
     </flexbox>
@@ -54,6 +54,7 @@
     export default {
         data() {
             return {
+                testNull:''
 
             };
         },
