@@ -1,6 +1,6 @@
 <template>
   <div class="hello"> 
-  
+   <div>{{ourVuex}}</div>
    <div>{{testNull}}</div>
  
     <flexbox class="vux-flexbox vux-flex-row">
@@ -65,7 +65,8 @@
     export default {
         data() {
             return {
-                testNull:''
+                testNull:'',
+                ourVuex:this.$store.state.ourVuex
 
             };
         },
@@ -86,6 +87,7 @@
                 this.$router.push({
                     path: '/Axios'
                 })
+                console.log(this.$store.state.ourVuex);
             },
             goTimeLine:function(){
                 this.$router.push({

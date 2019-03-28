@@ -6,6 +6,8 @@ import router from './router'
 import axios from 'axios'
 import returnBtn from './components/common/return.vue'
 import { TweenMax, TimelineMax, CSSPlugin } from "gsap/TweenMax";
+import Vuex from 'vuex'
+import store from './store'
 
 import { XButton, Divider, Group, Cell, XHeader, FlexboxItem, Flexbox } from 'vux'
 Vue.component('divider', Divider)
@@ -21,6 +23,7 @@ Vue.config.productionTip = false
 Vue.prototype.$host = '/api'
 import packedAxios from "./http";
 Vue.use(packedAxios); //使用this.$http代替封装好的axios
+Vue.use(Vuex);
 //移动端延迟配置
 const FastClick = require('fastclick')
 FastClick.attach(document.body)
@@ -28,6 +31,7 @@ FastClick.attach(document.body)
 /* eslint-disable no-new */
 new Vue({
     el: '#app',
+    store,
     router,
     components: { App },
     template: '<App/>'

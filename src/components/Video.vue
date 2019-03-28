@@ -52,13 +52,13 @@ export default {
 .play {
   position: absolute;
   width: 94px;
-  top: 30px;
+  top: 50px;
   left: 20%;
 }
 .pause {
   position: absolute;
   width: 94px;
-  top: 30px;
+  top: 50px;
   right: 20%;
 }
 
