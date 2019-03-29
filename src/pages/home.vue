@@ -73,13 +73,17 @@
          
         created() {},
         mounted() {
-
+           
         },
         methods: {
             goVideo: function() {
 
                 this.$router.push({
                     path: '/Video'
+                })
+                require.ensure([], function() {
+                    var awork = require('../http.js')
+                   
                 })
             },
             goAxios: function() {
