@@ -169,3 +169,7 @@ video.vue添加JSMPEG：
 
 #########
 add childTabs navgation content
+
+#########
+add require ensure module
+
